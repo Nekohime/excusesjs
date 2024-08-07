@@ -1,0 +1,24 @@
+{
+  "name": "nekohime.net excuses generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "excuses.js",
+  "scripts": {
+    "stylelint": "npx stylelint 'main.css'",
+    "stylelint-fix": "npx stylelint 'main.css' --fix",
+    "lint": "eslint 'excuses.js' --fix"
+  },
+  "author": "Nekohime",
+  "license": "CC0-1.0",
+  "homepage": "https://nekohime.net",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "postcss-html": "^1.7.0",
+    "stylelint": "^16.8.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.4"
+  }
+}

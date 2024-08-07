@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nekohime.net - Silly Excuse Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Silly random excuse generator">
+    <meta name="author" content="Nekohime">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="no-referrer">
+    <link href="/favicon.png" rel="icon">
+    <link href="main.css"  media="all" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="box">JavaScript Required, sorry!</div>
+
+
+  <script type="module">
+    import ExcuseGenerator from "./excuses.js";
+
+    const excuses = new ExcuseGenerator(5);
+
+    const box = document.querySelector('.box');
+
+    box.innerHTML = excuses.getExcuses(1).join('');
+    box.addEventListener('click', () => {
+      excuses.clearExcuses();
+      box.innerHTML = excuses.getExcuses(1).join('');
+    })
+
+  </script>
+  </body>
+</html>

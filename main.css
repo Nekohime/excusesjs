@@ -1,0 +1,25 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px 0;
+  overflow-x: hidden;
+  color: #D3D3D3;
+  font: 3em Roboto, 'Liberation Sans', 'DejaVu Sans', Arial, sans-serif, Webdings;
+  background: #000;
+  font-display: swap;
+}
+
+.box {
+  /* border: 1px dashed white; */
+
+  text-align: center;
+  cursor: pointer;
+}
